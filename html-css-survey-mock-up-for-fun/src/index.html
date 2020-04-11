@@ -1,0 +1,80 @@
+<header>
+  <h1 id="title">Favorite Movie Survey</h1>
+  <p id="description">Tell me about your favorite movie!</p>
+</header>
+
+<form id="survey-form">
+  <section class="form-sections" id="basic-info">
+    <h2>The Basics</h2>
+
+    <label id="email-label">
+      <input id="email" type="email" placeholder="Your Email Address" required>
+      Email</label>
+    <br>
+    <label id="name-label">
+      <input id="name" type="text" placeholder="Favorite Movie's Name" required>
+      Movie Name</label>
+    <br>
+    <label id="number-label">
+      <input id="number" type="number" placeholder="Year" min="1888" max="2020" required>
+      Year Of Release</label>
+  </section>
+
+  <section class="form-sections" id="more-info">
+    <h2>Genre & Setting</h2>
+    <label for="dropdown" id="genre-label">
+      <select id="dropdown" required>
+        <option value="horror">Horror</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="romance">Romance</option>
+        <option value="western">Western</option>
+        <option value="drama">Drama</option>
+      </select>
+      Genre</label>
+    <br>
+
+    <label for="sci-fi">
+      <input id="sci-fi" type="radio" name="time-setting" value="sci-fi">
+      Sci-fi/Future</label>
+    <label for="pres-day">
+      <input id="pres-day" type="radio" name="time-setting" value="pres-day">
+      Present Day</label>
+    <label for="past">
+      <input id="past" type="radio" name="time-setting" value="past">
+      Fantasy/Past</label>
+  </section>
+
+  <section class="form-sections" id="other-info">
+    <h2>Where Did You See It?</h2>
+    <label for="aaa">
+      <input id="aaa" type="radio" name="indy-aaa" value="aaa">
+      AAA Release</label>
+    <label for="indy">
+      <input id="indy" type="radio" name="indy-aaa" value="indy">
+      Indy Release</label>
+    <br>
+    <label for="theaters">
+      <input id="theaters" type="checkbox" name="where-seen" value="theaters">
+      Theaters</label>
+    <label for="purchased">
+      <input id="purchased" type="checkbox" name="where-seen" value="purchased">
+      Purchased</label>
+    <label for="tv">
+      <input id="tv" type="checkbox" name="where-seen" value="tv">
+      T.V./Streaming</label>
+  </section>
+
+  <section class="form-sections" id="summary">
+    <h2>What's It About?</h2>
+    <label for="small-summary">
+      <p>Give a brief summary!</p>
+      <textarea id="small-summary" rows="6" cols="100" required></textarea>
+    </label>
+    <div id="button-div" for="submit">
+      <button id="submit" type="submit">
+        Submit
+      </button>
+    </div>
+  </section>
+</form>
